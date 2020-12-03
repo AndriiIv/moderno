@@ -400,5 +400,151 @@
     width: 100%;
   }
 }
+//end tutorial
+//start footer
+.footer{
+  background-color: $bg;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px 80px;
+    color: #b7c3c8;
+  }
+  &__copy{
+    border-top: 1px solid #919699;
+    padding: 25px 0px;
+  }
+  &__copy-text{
+    text-align: center;
+    color: #919699;
+  }
+}
+.footer__col{
+  max-width: 270px;
+  &-center{
+    max-width: 220px;
+  }
+  &-title{
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+  &-text{
+    margin-bottom: 30px;
+  }
+  &-info{
+    margin-top: 18px;
+    color: #fff;
+    @include f500;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '\f041';
+      font-family: 'icomoon' !important;
+      color: $green;
+      font-size: 18px;
+      position: absolute;
+      left: 0;
+    }
+  }
+  &-list{
+    a{
+      color: #b7c3c8;
+      margin-bottom: 15px;
+      padding-left: 22px;
+      position: relative;
+      &::before{
+        content: "\f105";
+        font-family: 'icomoon' !important;
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
+.footer__col-info--phone{
+    &::before{
+      content: '\f095';
+      font-family: 'icomoon' !important;
+    }
+}
+.footer__form{
+  position: relative;
+  input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 2px 56px 2px 16px;
+    background-color: #2f3c43;
+    outline: none;
+    border: none;
+    color: #fff;
+    &::placeholder{
+      font-size: 14px;
+      line-height: 36px;
+      color: #697378;
+    }
+  }
+  button{
+    background-color: $green;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: 100%;
+    width: 43px;
+    &::before{
+      content: "\f124";
+      font-family: 'icomoon' !important;
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  &-title{
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+}
+.footer__social-link{
+  margin-bottom: 33px;
+  li{
+    display: inline-block;
+  }
+  a{
+    height: 28px;
+    width: 28px;
+    background-image: url(../images/css_sprites.png);
+    margin-right: 7px;
+  }
+}
+.link-twitter{
+  background-position: -28px 0px;
+}
+.link-youtube{
+  background-position: -0px 28px;
+}
+.link-pinterest{
+  background-position: -28px -28px;
+}
+.link-linkedin{
+  background-position: -56px 0px;
+}
 
 @import "media";
