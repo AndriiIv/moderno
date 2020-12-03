@@ -327,8 +327,46 @@
 .advantages__item-text{
   color: #b0bec5;
 }
-
-
+//end advantages
+//start author
+.author{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__box{
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+  }
+  &__title{
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    margin-right: 45px;
+    width: 260px;
+    span{
+      @include f500;
+    }
+  }
+  &__link{
+    background-color: #fff;
+    color: $color-text;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px;
+    max-width: 225px;
+    width: 100%;
+    text-align: center;
+  }
+}
 
 
 
